@@ -1,7 +1,8 @@
 import { createContext } from 'react';
 
 
-const SmurfContext = createContext();
+export const SmurfsContext = createContext();
+console.log('created smurfs context', SmurfsContext);
 
 
-export default SmurfContext;
+export default SmurfsContext;

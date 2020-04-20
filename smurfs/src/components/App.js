@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from "react";
-import axios from 'axios';
-import "./App.css";
+import SmurfContext from "../context/SmurfsContext";
 
-import { SmurfContext } from "../context/SmurfsContext";
-
-import AddSmurfForm from './AddSmurfForm';
+// import AddSmurfForm from './AddSmurfForm';
 import SmurfList from './SmurfList';
 
+import axios from 'axios';
 
-const App = () => {
+
+function App() {
 
   const [ smurfs, setSmurfs ] = useState([]);
 
@@ -28,11 +27,11 @@ const App = () => {
   return (
     <SmurfContext.Provider value={{ smurfs, setSmurfs }}>
       <div className="App">
-        <h1>SMURFS! 2.0 W/ Redux</h1>
-        <div>Welcome to your state management version of Smurfs!</div>
-        <div>Start inside of your `src/index.js` file!</div>
-        <div>Have fun!</div>
-        <AddSmurfForm />
+        <div className='Header'>
+          <h1>SMURFS! 2.0 W/ Redux</h1>
+          <h3>Welcome to Smurf Village!</h3>
+        </div>
+        {/* <AddSmurfForm /> */}
         <SmurfList />
       </div>
     </SmurfContext.Provider>
