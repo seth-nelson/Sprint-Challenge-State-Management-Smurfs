@@ -7,7 +7,7 @@ import SmurfList from './SmurfList';
 import axios from 'axios';
 
 
-function App() {
+const App = () => {
 
   const [ smurfs, setSmurfs ] = useState([]);
 
