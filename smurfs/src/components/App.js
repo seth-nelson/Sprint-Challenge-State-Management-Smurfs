@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import SmurfContext from "../context/SmurfsContext";
 
-// import AddSmurfForm from './AddSmurfForm';
+import AddSmurfForm from './AddSmurfForm';
 import SmurfList from './SmurfList';
 
 import axios from 'axios';
@@ -28,10 +28,9 @@ const App = () => {
     <SmurfContext.Provider value={{ smurfs, setSmurfs }}>
       <div className="App">
         <div className='Header'>
-          <h1>SMURFS! 2.0 W/ Redux</h1>
-          <h3>Welcome to Smurf Village!</h3>
+          <h1>Welcome to Smurf Village!</h1>
         </div>
-        {/* <AddSmurfForm /> */}
+        <AddSmurfForm />
         <SmurfList />
       </div>
     </SmurfContext.Provider>

@@ -14,7 +14,7 @@ const AddSmurfForm = props => {
 
     const newSmurf = useContext(SmurfsContext)
 
-    const submitForm = () => {
+    const submitForm = (event) => {
         event.preventDefault();
         axios
             .post(`http://localhost:3333/smurfs`, data)

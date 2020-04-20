@@ -9,6 +9,7 @@ const SmurfList = () => {
 
     return (
         <div className='list-container'>
+            <h2>The Village</h2>
             {smurfs.map(smurf => {
                 return (
                     <Smurf 
