@@ -5,6 +5,7 @@ import AddSmurfForm from './AddSmurfForm';
 import SmurfList from './SmurfList';
 
 import axios from 'axios';
+import './App.css';
 
 
 const App = () => {

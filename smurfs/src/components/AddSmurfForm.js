@@ -61,7 +61,7 @@ const AddSmurfForm = props => {
                     onChange={handleChanges}
                 />
 
-                <button type='submit' value='click to submit'>
+                <button className='submit-button' type='submit' value='click to submit'>
                     Add Smurf
                 </button>
             </form>

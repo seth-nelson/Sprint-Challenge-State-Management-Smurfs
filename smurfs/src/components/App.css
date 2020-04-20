@@ -1,3 +1,82 @@
 .App {
   text-align: center;
+  margin-top: 20px
+}
+
+.Header {
+  display: inline-block;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 50%;
+  font-size: 1.25em;
+}
+
+.form-container h4 {
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px darkred;
+}
+
+input {
+  background-color: lightgrey;
+  color: darkred;
+  padding: 5px;
+  margin: 5px;
+}
+
+.submit-button {
+  width: 100px;
+  height: 30px;
+  padding: 5px;
+  margin: 5px;
+  background-color: gold;
+  border: black;
+  border-radius: 5px;
+  font-weight: bold;
+  transition-duration: .3s
+}
+
+.submit-button:hover {
+  background-color: royalblue;
+}
+
+.list-container {
+  display: inline-block;
+  width: 30%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+  background-color: lightgrey;
+  border: 2px solid black;
+  border-radius: 15px;
+  font-size: 1.5em;
+  color: black;
+}
+
+.smurf-bio {
+  display: inline-block;
+  width: 75%;
+  margin: 10px;
+  background-color: rgb(85, 169, 221);
+  transition-duration: .3s;
+  border: 10px dotted darkred;
+  border-radius: 30px;
+}
+
+.smurf-bio:hover {
+  background-color: white;
+}
+
+.smurf-bio h3 {
+  font-size: 1em;
+  text-decoration: underline;
+}
+
+.smurf-bio h5 {
+  font-size: .75em;
+  font-style: italic;
+  color: darkslategrey;
+  opacity: 80%;
 }
