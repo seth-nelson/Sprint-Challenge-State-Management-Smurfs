@@ -10,16 +10,7 @@ const SmurfList = () => {
     return (
         <div className='list-container'>
             <h2>The Village</h2>
-            {smurfs.map(smurf => {
-                return (
-                    <Smurf 
-                    key={smurf.id}
-                    name={smurf.name}
-                    age={smurf.age}
-                    height={smurf.height}
-                    />
-                )
-            })}
+            {smurfs.map(smurf => <Smurf key={smurf.id} {...smurf} /> )}
         </div>
     );
 }

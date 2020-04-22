@@ -4,7 +4,7 @@ import axios from 'axios';
 import { SmurfsContext } from '../context/SmurfsContext';
 
 
-const AddSmurfForm = props => {
+function AddSmurfForm() {
 
     const [ data, setData ] = useState({
         name: '',
@@ -14,16 +14,13 @@ const AddSmurfForm = props => {
 
     const newSmurf = useContext(SmurfsContext)
 
-    const submitForm = (event) => {
+    const submitForm = event => {
         event.preventDefault();
         axios
             .post(`http://localhost:3333/smurfs`, data)
-            .then(result => {
-                newSmurf.setSmurfs(result.data)
-            })
-            .catch(error => {
-                console.log('post to server error', error);
-            })
+            .then(result => newSmurf.setSmurfs(result.data))
+            .catch(error => console.log('post to server error', error))
+
         setData({ name: '', age: '', height: ''})
     }
 
